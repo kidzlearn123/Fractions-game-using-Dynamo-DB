@@ -4,7 +4,7 @@ console.log("test");
  var Alexa = require("alexa-sdk");
  exports.handler = function(event, context) {
      var alexa = Alexa.handler(event, context);
-    alexa.dynamoDBTableName = 'KidzStory';
+    alexa.dynamoDBTableName = 'name';
      alexa.registerHandlers(handlers);
      alexa.execute();
  };
@@ -25,7 +25,7 @@ var eventData;
 
 
       var params = {
-                   TableName : 'KidzStory',
+                   TableName : 'name',
                    Key : {
                    Number : 1
                     }
