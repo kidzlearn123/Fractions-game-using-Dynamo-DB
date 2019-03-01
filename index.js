@@ -216,7 +216,7 @@ var handlers = {
         console.log('Session ended with reason: ' + this.event.request.reason);
     },
     'AMAZON.StopIntent' : function() {
-        this.response.speak("Ok. Bye and have a great day. Check out http://www.kidzlearn<say-as interpret-as='spell-out'>.co</say-as> <break time='0.5s'/>with a z in kidz, for more educational products.");
+        this.response.speak("Ok. Bye and have a great day.");
         this.emit(':responseReady');
     },
     'MyHelpIntent' : function() {
@@ -235,7 +235,7 @@ var handlers = {
            }
     },
     'AMAZON.CancelIntent' : function() {
-        this.response.speak("Ok. Bye and have a great day. Check out http://www.kidzlearn.co for other educational products.");
+        this.response.speak("Ok. Bye and have a great day. ");
         this.emit(':responseReady');
     },
     'Unhandled' : function() {
